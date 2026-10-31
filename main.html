@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixora - Share Your Inspiration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">WAIBHAV R<span>.</span></div>
+
+  <nav>
+    <a href="#" class="active">Home</a>
+    <a href="#explore">Explore</a>
+    <a href="#upload">Create</a>
+  </nav>
+
+  <div class="nav-right">
+    <input type="search" id="search" placeholder="Search ideas...">
+    <button class="profile">P</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Discover. Share. <span>Inspire.</span></h1>
+    <p>Find beautiful ideas and share your creativity with the world.</p>
+    <a href="#explore" class="hero-btn">Explore Now →</a>
+  </div>
+</section>
+
+<main id="explore">
+
+  <div class="section-heading">
+    <div>
+      <h2>Explore Ideas ✨</h2>
+      <p>Discover something beautiful today.</p>
+    </div>
+
+    <button id="uploadBtn" class="upload-btn">
+      + Create Post
+    </button>
+  </div>
+
+  <div class="gallery" id="gallery">
+
+    <article class="post">
+      <img src="Green Hulk-Inspired Classroom Portrait.png"
+" alt="Jethalal become halk">
+      <div class="post-info">
+        <h3>Jethalal halk</h3>
+        <p>Jethalal and halk</p>
+        <div class="actions">
+          <button class="like">♡ <span>12</span></button>
+          <button class="save">☆ Save</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="IMG-20261005-WA0000.jpg" alt="Interior design">
+      <div class="post-info">
+        <h3>Dream Interior</h3>
+        <p>Home Design</p>
+        <div class="actions">
+          <button class="like">♡ <span>25</span></button>
+          <button class="save">☆ Save</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600" alt="Travel landscape">
+      <div class="post-info">
+        <h3>Adventure Time</h3>
+        <p>Travel</p>
+        <div class="actions">
+          <button class="like">♡ <span>34</span></button>
+          <button class="save">☆ Save</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <video controls preload="metadata"
+        poster="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+      </video>
+      <div class="post-info">
+        <h3>Nature in Motion</h3>
+        <p>Video Inspiration</p>
+        <div class="actions">
+          <button class="like">♡ <span>18</span></button>
+          <button class="save">☆ Save</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="Gemini_Generated_Image_3esgh73esgh73esg.png" alt="Flowers">
+      <div class="post-info">
+        <h3>Collection</h3>
+        <p>Photography</p>
+        <div class="actions">
+          <button class="like">♡ <span>45</span></button>
+          <button class="save">☆ Save</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="ezmaker_06ad26354bbcaea677dc093f29e0ebe5.png" alt="Portrait photography">
+      <div class="post-info">
+        <h3>new jehtalal</h3>
+        <p>jehtalal photo</p>
+        <div class="actions">
+          <button class="like">♡ <span>29</span></button>
+          <button class="save">☆ Save</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <p id="emptyMessage" hidden>No posts found. Try another search!</p>
+
+</main>
+
+<!-- Upload Popup -->
+<div class="modal" id="uploadModal">
+  <div class="modal-content">
+    <button class="close" id="closeModal">×</button>
+    <h2>Create a Post 🎨</h2>
+    <p>Share your favourite moments.</p>
+
+    <form id="uploadForm">
+      <label>Post Title</label>
+      <input type="text" id="postTitle" placeholder="Enter a title" required>
+
+      <label>Description</label>
+      <input type="text" id="postDescription" placeholder="Write something...">
+
+      <label>Select Photo or Video</label>
+      <input type="file" id="mediaFile"
+        accept="image/*,video/*" required>
+
+      <div id="preview"></div>
+
+      <button type="submit" class="submit-btn">
+        Publish Post 🚀
+      </button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <h2>WAIBHAV R<span>.</span></h2>
+  <p>Made with ❤️ for creative people.</p>
+  <p>© 2026 WAIBHAV R. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
